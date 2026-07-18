@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+
+{% block title %}Forge — Custom Software, Automation & Web Applications{% endblock %}
+{% block description %}Forge designs and builds custom websites, applications, dashboards, and automation systems that eliminate manual work for growing businesses.{% endblock %}
+
+{% block content %}
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero text-on-dark">
+    <div class="blueprint-grid" aria-hidden="true"></div>
+    <div class="container-wide mx-auto px-4 hero-inner">
+      <div class="row align-items-center gy-6">
+        <div class="col-lg-6">
+          <span class="eyebrow">/home/vision</span>
+          <h1>Your Business Isn't Off-the-Shelf. Your Software Shouldn't Be Either.</h1>
+          <p class="lead">We design and build custom websites, applications, dashboards, and automation systems that remove manual work — engineered around how your business actually runs, not squeezed into a template.</p>
+          <div class="d-flex flex-wrap gap-3 mt-5">
+            <a href="{% url 'contact' %}" class="btn btn-signal btn-lg">Book a Free Consultation</a>
+            <a href="{% url 'portfolio' %}" class="btn btn-outline-ink btn-lg">View Our Work</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bracket-frame">
+            <span class="bf-tr" aria-hidden="true"></span><span class="bf-bl" aria-hidden="true"></span>
+            <div class="hero-visual rounded-3 d-flex">
+              <div class="img-placeholder">
+                <i class="fa-regular fa-image" aria-hidden="true"></i>
+                <span>hero-image.webp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Illustrative placeholder metrics — replace with real figures before launch -->
+      <div class="trust-strip row gx-4 gy-4">
+        <div class="col-6 col-md-3 trust-stat">
+          <span class="num"><span data-count-to="60" data-count-suffix="+">0</span></span>
+          <span class="label">Projects Delivered</span>
+        </div>
+        <div class="col-6 col-md-3 trust-stat">
+          <span class="num"><span data-count-to="8">0</span></span>
+          <span class="label">Industries Served</span>
+        </div>
+        <div class="col-6 col-md-3 trust-stat">
+          <span class="num"><span data-count-to="99" data-count-suffix="%">0</span></span>
+          <span class="label">On-Time Delivery</span>
+        </div>
+        <div class="col-6 col-md-3 trust-stat">
+          <span class="num">24/7</span>
+          <span class="label">System Monitoring</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="container-wide mx-auto px-4">
+      <div class="section-head reveal">
+        <span class="eyebrow">/services</span>
+        <h2 id="services-heading" class="text-3xl">Software That Solves Real Business Problems</h2>
+        <p>Eight ways we help growing businesses replace manual work, disconnected tools, and outdated websites with systems built specifically for how they operate.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3>Business Websites</h3>
+            <p>A fast, credible site engineered for conversions and search — not assembled from a page builder.</p>
+            <a href="{% url 'services' %}#websites" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <h3>Custom Web Applications</h3>
+            <p>Bespoke software built around your exact workflow, replacing spreadsheets with something built to last.</p>
+            <a href="{% url 'services' %}#applications" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></div>
+            <h3>Booking &amp; Reservation Systems</h3>
+            <p>Scheduling built around how your business runs — fewer no-shows, fewer calls, more booked hours.</p>
+            <a href="{% url 'services' %}#booking" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+            <h3>Dashboards &amp; Analytics</h3>
+            <p>Real-time visibility into the numbers that matter, pulled from every tool you use into one clear view.</p>
+            <a href="{% url 'services' %}#dashboards" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+            <h3>Business Automation</h3>
+            <p>We find the repetitive, manual work quietly costing your team hours every week — and build it away.</p>
+            <a href="{% url 'services' %}#automation" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></div>
+            <h3>Customer &amp; Employee Portals</h3>
+            <p>Secure, self-serve access to orders, records, and requests — so your inbox stops being the bottleneck.</p>
+            <a href="{% url 'services' %}#portals" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></div>
+            <h3>Payment &amp; E-commerce Integrations</h3>
+            <p>Secure checkout, subscriptions, and invoicing that gets you paid faster, with fewer dropped transactions.</p>
+            <a href="{% url 'services' %}#payments" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+          <div class="card-custom">
+            <div class="card-icon"><i class="fa-solid fa-life-ring" aria-hidden="true"></i></div>
+            <h3>Maintenance &amp; Ongoing Support</h3>
+            <p>We stay on after launch — monitoring, patching, and improving your systems so you don't have to.</p>
+            <a href="{% url 'services' %}#maintenance" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY FORGE ============ -->
+  <section class="section section-paper-alt" aria-labelledby="why-heading">
+    <div class="container-wide mx-auto px-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5 reveal">
+          <span class="eyebrow">/why-forge</span>
+          <h2 id="why-heading" class="text-3xl">Built Custom. Not Assembled From a Kit.</h2>
+          <p class="mb-4">Template sites and off-the-shelf tools work — until your business outgrows them. We build software that's shaped around your operation from the first sketch, so it keeps working as you scale.</p>
+          <a href="{% url 'about' %}" class="btn-ghost-arrow">More about how we work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-sm-6 reveal">
+              <div class="card-custom">
+                <div class="card-icon"><i class="fa-solid fa-drafting-compass" aria-hidden="true"></i></div>
+                <h3>Engineered, Not Templated</h3>
+                <p>Every project starts with a real plan for your business, not a layout we adjust the colors on.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal reveal-delay-1">
+              <div class="card-custom">
+                <div class="card-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+                <h3>Automation-First Thinking</h3>
+                <p>We look for the manual work you didn't know could disappear — then quietly remove it.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal reveal-delay-2">
+              <div class="card-custom">
+                <div class="card-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+                <h3>Built to Scale</h3>
+                <p>Clean architecture means your systems grow with the business instead of holding it back.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 reveal reveal-delay-3">
+              <div class="card-custom">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                <h3>A Long-Term Partner</h3>
+                <p>We don't disappear after launch. Ongoing support keeps everything fast, secure, and current.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS TEASER ============ -->
+  <section class="section text-on-dark" style="background: var(--ink-900);" aria-labelledby="process-heading">
+    <div class="container-wide mx-auto px-4">
+      <div class="section-head mx-auto text-center reveal">
+        <span class="eyebrow justify-content-center">/process</span>
+        <h2 id="process-heading" class="text-3xl">From Conversation to Live System in Four Stages</h2>
+      </div>
+      <div class="process-track row g-5">
+        <div class="col-md-3 process-step reveal">
+          <span class="step-node">01</span>
+          <h3>Discover</h3>
+          <p>We map your current workflow, bottlenecks, and goals before a line of code gets written.</p>
+        </div>
+        <div class="col-md-3 process-step reveal reveal-delay-1">
+          <span class="step-node">02</span>
+          <h3>Design</h3>
+          <p>Architecture and user experience are planned together, so the system is intuitive and built to last.</p>
+        </div>
+        <div class="col-md-3 process-step reveal reveal-delay-2">
+          <span class="step-node">03</span>
+          <h3>Build</h3>
+          <p>Agile development with regular check-ins — you always know exactly where your project stands.</p>
+        </div>
+        <div class="col-md-3 process-step reveal reveal-delay-3">
+          <span class="step-node">04</span>
+          <h3>Launch &amp; Support</h3>
+          <p>We deploy, monitor, and keep improving your system long after go-live.</p>
+        </div>
+      </div>
+      <div class="text-center mt-6 reveal">
+        <a href="{% url 'process' %}" class="btn-ghost-arrow">See our full process <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO TEASER ============ -->
+  <section class="section" aria-labelledby="portfolio-heading">
+    <div class="container-wide mx-auto px-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 section-head reveal" style="margin-bottom: var(--space-7);">
+        <div>
+          <span class="eyebrow">/portfolio</span>
+          <h2 id="portfolio-heading" class="text-3xl mb-0">Recent Work</h2>
+        </div>
+        <a href="{% url 'portfolio' %}" class="btn-ghost-arrow">View full portfolio <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <!-- Sample projects — replace with real case studies and screenshots -->
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <article class="portfolio-card">
+            <div class="bracket-frame portfolio-media">
+              <span class="bf-tr" aria-hidden="true"></span><span class="bf-bl" aria-hidden="true"></span>
+              <div class="img-placeholder h-100">
+                <i class="fa-regular fa-image" aria-hidden="true"></i>
+                <span>dashboard-preview.webp</span>
+              </div>
+            </div>
+            <span class="portfolio-tag">FIG.01 — LOGISTICS</span>
+            <h3>Fleet Operations Dashboard</h3>
+            <p>A real-time analytics dashboard that cut weekly reporting time from hours to minutes.</p>
+          </article>
+        </div>
+        <div class="col-md-4 reveal reveal-delay-1">
+          <article class="portfolio-card">
+            <div class="bracket-frame portfolio-media">
+              <span class="bf-tr" aria-hidden="true"></span><span class="bf-bl" aria-hidden="true"></span>
+              <div class="img-placeholder h-100">
+                <i class="fa-regular fa-image" aria-hidden="true"></i>
+                <span>booking-system.webp</span>
+              </div>
+            </div>
+            <span class="portfolio-tag">FIG.02 — HEALTH &amp; FITNESS</span>
+            <h3>Multi-Location Booking Platform</h3>
+            <p>Custom scheduling that handles staff, rooms, and equipment across six locations.</p>
+          </article>
+        </div>
+        <div class="col-md-4 reveal reveal-delay-2">
+          <article class="portfolio-card">
+            <div class="bracket-frame portfolio-media">
+              <span class="bf-tr" aria-hidden="true"></span><span class="bf-bl" aria-hidden="true"></span>
+              <div class="img-placeholder h-100">
+                <i class="fa-regular fa-image" aria-hidden="true"></i>
+                <span>customer-portal.webp</span>
+              </div>
+            </div>
+            <span class="portfolio-tag">FIG.03 — PROFESSIONAL SERVICES</span>
+            <h3>Client Self-Service Portal</h3>
+            <p>A secure portal giving clients real-time access to orders, invoices, and documents.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-paper-alt" aria-labelledby="testimonials-heading">
+    <div class="container-wide mx-auto px-4">
+      <div class="section-head mx-auto text-center reveal">
+        <span class="eyebrow justify-content-center">/testimonials</span>
+        <h2 id="testimonials-heading" class="text-3xl">What Clients Say</h2>
+      </div>
+      <!-- Placeholder quotes — swap in real client feedback -->
+      <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <div class="testimonial-card">
+            <span class="quote-mark">&ldquo;</span>
+            <p class="quote">Forge didn't just build us a website — they rebuilt how our bookings work. No-shows are down by half.</p>
+            <div class="attribution">
+              <div class="avatar-ph"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+              <div><div class="who">Operations Lead</div><div class="role">Wellness Studio</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal reveal-delay-1">
+          <div class="testimonial-card">
+            <span class="quote-mark">&ldquo;</span>
+            <p class="quote">They think like engineers, not designers-for-hire. The dashboard they built now runs every Monday meeting.</p>
+            <div class="attribution">
+              <div class="avatar-ph"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+              <div><div class="who">Founder</div><div class="role">Logistics Startup</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal reveal-delay-2">
+          <div class="testimonial-card">
+            <span class="quote-mark">&ldquo;</span>
+            <p class="quote">Ongoing support has been the real difference. Nothing breaks, and when we need something new, it gets built.</p>
+            <div class="attribution">
+              <div class="avatar-ph"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+              <div><div class="who">Managing Director</div><div class="role">Professional Services Firm</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band section-sm text-on-dark">
+    <div class="blueprint-grid" aria-hidden="true"></div>
+    <div class="container-wide mx-auto px-4 position-relative">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8 reveal">
+          <span class="eyebrow">/start</span>
+          <h2>Ready to Replace the Manual Work With Real Software?</h2>
+          <p class="lead">Tell us what's slowing your business down. We'll show you exactly how custom software and automation can fix it — no pressure, no jargon.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end reveal reveal-delay-1">
+          <a href="{% url 'contact' %}" class="btn btn-signal btn-lg">Book a Free Consultation</a>
+          <p class="mt-3 mb-0" style="font-size: var(--text-xs); color: var(--text-inverse-muted);">Typically a 30-minute call. No obligation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

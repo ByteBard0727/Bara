@@ -1,0 +1,49 @@
+<footer class="site-footer text-on-dark">
+  <div class="container-wide mx-auto px-4">
+    <div class="row gy-5">
+      <div class="col-lg-4 pe-lg-5">
+        <a href="{% url 'home' %}" class="brand text-inverse d-inline-flex mb-3" style="color: var(--text-inverse);">
+          <span class="brand-mark" style="color: var(--line-blue);">&lt;/&gt;</span>Forge<span style="color: var(--line-blue);">.</span>
+        </a>
+        <p class="mb-4" style="max-width: 34ch;">Custom software, automation and web platforms for businesses that have outgrown templates.</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="social-icon" aria-label="Forge on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" class="social-icon" aria-label="Forge on X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="social-icon" aria-label="Forge on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="#" class="social-icon" aria-label="Forge on Dribbble"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Services</h6>
+        <a class="footer-link" href="{% url 'services' %}#websites">Business Websites</a>
+        <a class="footer-link" href="{% url 'services' %}#applications">Custom Web Apps</a>
+        <a class="footer-link" href="{% url 'services' %}#booking">Booking Systems</a>
+        <a class="footer-link" href="{% url 'services' %}#dashboards">Dashboards &amp; Analytics</a>
+        <a class="footer-link" href="{% url 'services' %}#automation">Business Automation</a>
+        <a class="footer-link" href="{% url 'services' %}#portals">Customer Portals</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <a class="footer-link" href="{% url 'about' %}">About</a>
+        <a class="footer-link" href="{% url 'process' %}">Our Process</a>
+        <a class="footer-link" href="{% url 'portfolio' %}">Portfolio</a>
+        <a class="footer-link" href="{% url 'pricing' %}">Pricing</a>
+        <a class="footer-link" href="{% url 'faq' %}">FAQ</a>
+      </div>
+      <div class="col-lg-4">
+        <h6>Start a project</h6>
+        <a class="footer-link" href="mailto:hello@forge.example">hello@forge.example</a>
+        <a class="footer-link" href="tel:+10000000000">+1 (000) 000-0000</a>
+        <p class="mt-3 mb-4">Remote-first — working with clients across time zones, Mon–Fri.</p>
+        <a href="{% url 'contact' %}" class="btn btn-outline-ink btn-sm">Book a Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">&copy; <span class="js-year">2026</span> Forge Software Co. All rights reserved.</p>
+      <div class="d-flex gap-4">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>

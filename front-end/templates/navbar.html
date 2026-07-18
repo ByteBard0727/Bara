@@ -1,0 +1,28 @@
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg container-wide mx-auto px-4" aria-label="Primary">
+    <a class="navbar-brand brand" href="{% url 'home' %}">
+      <span class="brand-mark">&lt;/&gt;</span>Forge<span class="text-signal-700">.</span>
+    </a>
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <i class="fa-solid fa-bars fs-4" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="primaryNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-custom dropdown-toggle" href="{% url 'services' %}" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu border-0 shadow-lg p-2" aria-labelledby="servicesDropdown" style="border-radius: var(--radius-md);">
+            <li><a class="dropdown-item py-2" href="{% url 'services' %}">All Services</a></li>
+            <li><a class="dropdown-item py-2" href="{% url 'custom_software' %}">Custom Software</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="{% url 'process' %}">Process</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="{% url 'pricing' %}">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="{% url 'about' %}">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="{% url 'faq' %}">FAQ</a></li>
+        <li class="nav-item"><a class="btn btn-signal btn-nav-cta" href="{% url 'contact' %}">Book a Consultation</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

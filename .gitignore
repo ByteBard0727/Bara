@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# Django
+db.sqlite3
+
+# Media uploads
+media/
+
+# Static build output
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Mypy
+.mypy_cache/
+
+# Personal notes
+bara_home/text.txt
+front-end/static/pics/
+front-end/static/private.md
